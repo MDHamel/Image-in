@@ -1,0 +1,49 @@
+{
+    "images":
+    [
+        {
+            "id": 1,
+            "title": "Pupper",
+            "desc": "a lil\ndoggo",
+            "locale": "../assets/images/The_Puppy.jpg",
+            "alt":""
+        },
+        {
+            "id": 2,
+            "title": "White",
+            "desc": "its",
+            "locale": "../assets/images/white.jpg",
+            "alt":""
+        },
+        {
+            "id": 3,
+            "title": "Pupper",
+            "desc": "a lil doggo",
+            "locale": "../assets/images/The_Puppy.jpg",
+            "alt":""
+        },
+        {
+            "id": 4,
+            "title": "The Milky Way Galaxy",
+            "desc": "When you wish upon a star\nMakes no difference who you are\nAnything your heart desires\nWill come to you\nIf your heart is in your dream\nNo request is too extreme\nWhen you wish upon a star\nAs dreamers do\nLike a bolt out of the blue\nFate steps in and sees you through\nWhen you wish upon a star\nYour dreams come true",
+            "locale": "../assets/images/starynight.jpg",
+            "alt":""
+        },
+        {
+            "id": 5,
+            "title": "Pupper LONG LONG LONG LONG LONG ",
+            "desc": "a lil doggo a lil doggo a lil doggo a lil doggo a lil doggo a lil doggo a lil doggo a lil doggo ",
+            "locale": "../assets/images/The_Puppy.jpg",
+            "alt":""
+        },
+        {
+            "id": 6,
+            "title": "Pupper",
+            "desc": "a lil doggo",
+            "locale": "../assets/images/The_Puppy.jpg",
+            "alt":"A tiny little doggo :)"
+        }
+        
+        
+    ]
+}
