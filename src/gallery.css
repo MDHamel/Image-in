@@ -1,15 +1,15 @@
 .gallery{
-    margin-top: 125px;
+    margin-top: 100px;
     margin-left: 8vw;
     margin-right: 8vw;
     overflow: visible;
 }
 
 .card{
-    display: inline-block;
+    display: inline-flex;
     position: relative; 
     width: 12vw;
-    height: 25vh;
+    height: 225px;
     margin: 0 1vw 5vh 1vw;
     overflow: visible;
     
@@ -22,8 +22,8 @@
 
 .image{
     width: 100%;
+    height: 100%;
     border-radius: 10px;
-    height: 25vh;
     object-fit: cover;
 }
 
@@ -44,49 +44,16 @@
     text-overflow: ellipsis;
 }
 
-.overlay{
-    position: fixed;
-    display: flex;
-    
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    margin: 0;
-    z-index: 1000;
-    top: 0;
-    
-}
-
-.overlay.hidden{
+.hidden{
     opacity: 0;
     visibility: hidden;
     transition: all .33s;
 }
 
-.overlay.reveal{
+.reveal{
     visibility: visible;
     opacity: 1;
     transition: all .33s;
-}
-
-.right{
-    position: absolute;
-    right:0;
-    z-index: 1000;
-    width: 20vw;
-    height: 100vh;
-    background-color: #444e;
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-.reveal .right{
-    animation: soft 4s;
-}
-
-.reveal .right:hover{
-    opacity: 1;
-    transition: all 1s;
 }
 
 .close{
@@ -103,41 +70,6 @@
     margin: 0;
     user-select: none;
     cursor: pointer;
-}
-
-.overlayTitle{
-    width: 90%;
-    margin: 50px 0px 0px 25px;
-    z-index: 100000;
-    color: #eee;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.overlayImg{
-    max-height: 100%;
-    max-width: 100%;
-    width: auto;
-    margin: auto;
-}
-
-.reveal .overlayImg{
-    visibility: visible;
-    animation: zoom .25s;
-}
-
-.hidden .overlayImg{
-    visibility: hidden;
-}
-
-.desc{
-    margin: 25px 20px 20px 35px;
-    width: auto;
-    color: #eee;
-    bottom: 0;
-    font-size: 18px;
-    z-index: 10000;
-    white-space: pre-line;
 }
 
 .offclick{
