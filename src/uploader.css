@@ -1,0 +1,145 @@
+.uploader{
+    position: fixed;
+    display: flex;
+    
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    z-index: 1000;
+    top: 0;
+    
+}
+
+.formOffset{
+    margin-top: 12%;
+}
+
+
+.uploaderRight{
+    display: block;
+    margin: 3% 10% 0% 0%;
+    position: absolute;
+    width: 40%;
+    right: 0;
+    height: 85vh;
+    background-color: #444;
+}
+
+.uploaderRight input, textarea, button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    color: whitesmoke;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    
+}
+
+.uploaderRight input, textarea{
+    min-width: 45%;
+    padding: 15px;
+    background-color: #373737;
+    border: #555 2px solid;
+}
+
+.uploaderRight textarea{
+    min-height: 20vh;
+    size-adjust: fixed;
+    resize: none;
+}
+
+.uploaderRight button{
+    padding: 10px 25px;
+    font-size: 22px;
+    font-weight: 750;
+    line-height: 1.5em;
+    background-color: rgb(94, 114, 230);
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: scale .175s;
+}
+
+.uploaderRight button:hover{
+    background-color: rgb(123, 141, 240);
+    scale: 1.1;
+
+    transition: scale .175s;
+}
+
+
+.uploaderLeft{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3% 0% 0% 10%;
+    width: 40%;
+    height: 85vh;
+    background-color: #353535;
+    user-select: none;
+    color: white;
+}
+
+
+.uploaderLeft img{
+    max-width: 99%;
+    max-height: 99%;
+    margin: auto;
+}
+
+
+#imageplaceholder{
+    transform: rotate(-5deg);
+    width: 60%;
+}
+
+.uploaderLeft p{
+    margin: 0;
+    top: 0;
+    position:absolute;
+
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    background-image: linear-gradient(#353535f0,#353535b0, #35353580, #35353500);;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    z-index: 10000;
+
+}
+
+#fileIn{
+    display: none;
+}
+
+.uploaderLeft:hover{
+    color: rgb(170, 210, 255);
+    cursor: pointer;
+    
+}
+
+.uploaderLeft:active{
+    color: rgb(110, 161, 255);;
+}
+
+.uploaderRight .error, .uploaderRight .error:hover{
+    background-color: rgb(245, 65, 65);
+    animation: errorshake .75s;
+}
+
+@keyframes errorshake {
+    0%  {transform: translateX(0);}
+    20% {transform: translateX(-15%);}
+    40% {transform: translateX(15%);}
+    60% {transform: translateX(-15%);}
+    80% {transform: translateX(15%);}
+    100%{transform: translateX(0);}
+
+}
