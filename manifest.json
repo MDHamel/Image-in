@@ -1,0 +1,11 @@
+{
+  "short_name": "Image-In",
+  "name": "Image-In photo gallery",
+  "icons": [
+    
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

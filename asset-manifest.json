@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/imagein.matthewhamel.dev/static/css/main.bbaf7068.css",
+    "main.js": "/imagein.matthewhamel.dev/static/js/main.b96b349a.js",
+    "static/js/787.d7e7aaf3.chunk.js": "/imagein.matthewhamel.dev/static/js/787.d7e7aaf3.chunk.js",
+    "index.html": "/imagein.matthewhamel.dev/index.html",
+    "main.bbaf7068.css.map": "/imagein.matthewhamel.dev/static/css/main.bbaf7068.css.map",
+    "main.b96b349a.js.map": "/imagein.matthewhamel.dev/static/js/main.b96b349a.js.map",
+    "787.d7e7aaf3.chunk.js.map": "/imagein.matthewhamel.dev/static/js/787.d7e7aaf3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbaf7068.css",
+    "static/js/main.b96b349a.js"
+  ]
+}
