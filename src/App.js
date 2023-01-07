@@ -34,7 +34,7 @@ export default function App() {
   return (
     <main>
 
-      <Navbar uploder={() => { setUploadeState("reveal"); console.log(uploadState) }} />
+      <Navbar uploder={() => { setUploadeState("reveal");}} />
 
       <Overlay display={overlay} closer={() => { setOverlay(""); }} />
       <Uploader closer={() => setUploadeState("hidden")} display={uploadState} updater={() => { getContent().then((res) => { setContent(res.data.content) }) }} />
@@ -71,7 +71,7 @@ function Navbar(props) {
   return (
     <nav>
       <h1 className='logo'>IMAGE <span>IN</span></h1>
-      <p className='button' onClick={props.uploder}>Add Image</p>
+      <span className='upload' onClick={props.uploder}>Add Image</span>
     </nav>
   )
 }
@@ -103,7 +103,7 @@ function Overlay(props) {
 function Uploader(props) {
   const [image, setImage] = useState("");
   const inputFile = useRef(null);
-  const src = image === "" ? "../assets/images/imageplaceholder.png" : URL.createObjectURL(image);
+  const src = image === "" ? "../imageplaceholder.png" : URL.createObjectURL(image);
   const acceptedFileTypes = ".jpg, .jpeg, .gif, .png, .webp";
   const [uploadError, setError] = useState("");
   const [loginReveal, setReveal] = useState(false);
@@ -143,12 +143,10 @@ function Uploader(props) {
 
       await axios.post(serverURL, formdata)
         .then(res => {
-          console.log(res);
           closeUploader();
           props.updater();
         })
         .catch(err => { 
-          console.log(err); 
           setError("error");
           setReveal("true")
         });
@@ -191,17 +189,13 @@ function Uploader(props) {
 
 function Login(props) {
 
-  const loginpost = () => {
-
-    console.log(document.getElementById("uname").value)
-    console.log(document.getElementById("password").value)
-    
+  const loginpost = () => {    
     const info = {
       user: document.getElementById("uname").value,
       password: document.getElementById("password").value
     }
 
-    axios.post(process.env.REACT_APP_LOGIN_URL, JSON.stringify(info)).then((res) => { console.log(res); props.setReveal(false); }).catch((err) => {
+    axios.post(process.env.REACT_APP_LOGIN_URL, JSON.stringify(info)).then((res) => { props.setReveal(false); }).catch((err) => {
       console.log("ERROR", err.response);
     });
   }
