@@ -1,0 +1,40 @@
+nav{
+    position: fixed;
+    display: flex;
+    top:0;
+    z-index: 100;
+
+    width: 100%;
+    height: 70px;
+
+    background-color: rgb(58, 63, 94);
+}
+
+.logo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 38px;
+    color: rgb(235, 240, 250);
+    font-style: italic;
+    font-weight: 420;
+    
+    margin: auto 60px;
+    user-select: none;
+}
+
+.logo:hover{
+    transform: none;
+    transition: transform 1s;
+    animation: shake linear .5s;
+}
+
+
+
+
+@keyframes shake {
+    0%  {transform: rotate(0deg);}
+    20% {transform: rotate(5deg);}
+    40% {transform: rotate(-5deg);}
+    60% {transform: rotate(5deg);}
+    80% {transform: rotate(-5deg);}
+    100%{transform: rotate(0deg);}
+}

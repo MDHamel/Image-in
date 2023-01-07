@@ -1,23 +1,23 @@
-.uploader{
+.uploader {
     position: fixed;
     display: flex;
-    
-    
+
+
     width: 100%;
     height: 100%;
     overflow: hidden;
     margin: 0;
     z-index: 1000;
     top: 0;
-    
+
 }
 
-.formOffset{
+.formOffset {
     margin-top: 12%;
 }
 
 
-.uploaderRight{
+.uploaderRight {
     display: block;
     margin: 3% 10% 0% 0%;
     position: absolute;
@@ -27,32 +27,34 @@
     background-color: #444;
 }
 
-.uploaderRight input, textarea, button{
+.uploaderRight input,
+textarea,
+button {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
+    margin: 5% auto;
+
     color: whitesmoke;
-    
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    
+
 }
 
-.uploaderRight input, textarea{
+.uploaderRight input,
+textarea {
     min-width: 45%;
     padding: 15px;
     background-color: #373737;
     border: #555 2px solid;
 }
 
-.uploaderRight textarea{
+.uploaderRight textarea {
     min-height: 20vh;
     size-adjust: fixed;
     resize: none;
 }
 
-.uploaderRight button{
+.uploaderRight button {
     padding: 10px 25px;
     font-size: 22px;
     font-weight: 750;
@@ -64,7 +66,7 @@
     transition: scale .175s;
 }
 
-.uploaderRight button:hover{
+.uploaderRight button:hover {
     background-color: rgb(123, 141, 240);
     scale: 1.1;
 
@@ -72,7 +74,7 @@
 }
 
 
-.uploaderLeft{
+.uploaderLeft {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -86,60 +88,137 @@
 }
 
 
-.uploaderLeft img{
+.uploaderLeft img {
     max-width: 99%;
     max-height: 99%;
     margin: auto;
 }
 
 
-#imageplaceholder{
+#imageplaceholder {
     transform: rotate(-5deg);
     width: 60%;
 }
 
-.uploaderLeft p{
+.uploaderLeft p {
     margin: 0;
     top: 0;
-    position:absolute;
+    position: absolute;
+
 
     font-size: 20px;
     font-weight: 700;
     padding-top: 40px;
     padding-bottom: 40px;
     width: 100%;
-    background-image: linear-gradient(#353535f0,#353535b0, #35353580, #35353500);;
+    background-image: linear-gradient(#353535f0, #353535b0, #35353580, #35353500);
+    ;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     z-index: 10000;
 
 }
 
-#fileIn{
+#fileIn {
     display: none;
 }
 
-.uploaderLeft:hover{
+.uploaderLeft:hover {
     color: rgb(170, 210, 255);
     cursor: pointer;
-    
+
 }
 
-.uploaderLeft:active{
-    color: rgb(110, 161, 255);;
+.uploaderLeft:active {
+    color: rgb(110, 161, 255);
+    ;
 }
 
-.uploaderRight .error, .uploaderRight .error:hover{
+.uploaderRight .error,
+.uploaderRight .error:hover {
     background-color: rgb(245, 65, 65);
     animation: errorshake .75s;
 }
 
 @keyframes errorshake {
-    0%  {transform: translateX(0);}
-    20% {transform: translateX(-15%);}
-    40% {transform: translateX(15%);}
-    60% {transform: translateX(-15%);}
-    80% {transform: translateX(15%);}
-    100%{transform: translateX(0);}
+    0% {
+        transform: translateX(0);
+    }
 
+    20% {
+        transform: translateX(-15%);
+    }
+
+    40% {
+        transform: translateX(15%);
+    }
+
+    60% {
+        transform: translateX(-15%);
+    }
+
+    80% {
+        transform: translateX(15%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+
+
+.login {
+    position: absolute;
+    margin: 3% 0% 0% 10%;
+    background-color: #35353590;
+    width: 80%;
+    min-height: 85%;
+
+    color: white;
+    font-size: 22px;
+    z-index: 50000;
+}
+
+.login span {
+    margin: 0 2%;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+
+    backdrop-filter: blur(20px);
+
+    transition: all .25s;
+}
+
+.hidden {
+    opacity: 0;
+
+    visibility: hidden;
+    transition: all .1s;
+}
+
+.login form {
+    padding: 12% 0 5% 0;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+    margin: auto auto;
+}
+
+
+.login label{
+    margin: 25px 0 10px 0;
+
+}
+
+.login .bottom {
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }

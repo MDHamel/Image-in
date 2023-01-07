@@ -1,0 +1,68 @@
+.overlay{
+    position: fixed;
+    display: flex;
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    z-index: 1000;
+    top: 0;
+    
+}
+
+.rightOverlay{
+    position: absolute;
+    right:0;
+    z-index: 1000;
+    width: 20vw;
+    height: 100vh;
+    background-color: #444e;
+    opacity: 0;
+    transition: opacity 1s;
+    overflow-y: scroll;
+}
+
+.reveal .rightOverlay{
+    animation: soft 4s;
+}
+
+.reveal .rightOverlay:hover{
+    opacity: 1;
+    transition: all 1s;
+}
+
+.overlayTitle{
+    width: 90%;
+    margin: 50px 0px 0px 25px;
+    z-index: 100000;
+    color: #eee;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.overlayImg{
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    margin: auto;
+}
+
+.reveal .overlayImg{
+    visibility: visible;
+    animation: zoom .25s;
+}
+
+.hidden .overlayImg{
+    visibility: hidden;
+}
+
+.desc{
+    margin: 25px 20px 20px 35px;
+    width: auto;
+    color: #eee;
+    bottom: 0;
+    font-size: 18px;
+    z-index: 10000;
+    white-space: pre-line;
+}
