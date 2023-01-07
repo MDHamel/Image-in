@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
-import logo from './logo.svg';
 import './App.css';
-=======
 import './gallery.css';
 import './navbar.css';
 import './overlay.css';
@@ -227,4 +224,3 @@ function Login(props) {
     </section>
   )
 }
->>>>>>> Stashed changes
